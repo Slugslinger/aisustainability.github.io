@@ -77,7 +77,7 @@
             <div class="container mx-auto px-6 text-center">
                 <h1 class="text-4xl md:text-6xl font-bold text-gray-800 leading-tight">The AI Paradox</h1>
                 <p class="mt-4 text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">Powering Unprecedented Progress While Preserving Our Planet</p>
-                <p class="mt-8 text-2xl md:text-3xl font-semibold text-gray-700 italic max-w-4xl mx-auto">"Without sustainability, there is no future."</p>
+                <p class="mt-8 text-2xl md:text-3xl font-semibold text-gray-700 italic max-w-4xl mx-auto">"Without sustainability, there is no future." — David Ferreira</p>
                 <p class="mt-6 text-base text-gray-500 max-w-2xl mx-auto">This application explores the dual nature of artificial intelligence: its significant environmental burden and its remarkable potential as an ally in global sustainability efforts. Navigate through the sections to understand this critical challenge.</p>
             </div>
         </section>
@@ -239,15 +239,15 @@
                         <span class="text-4xl mr-4">${item.icon}</span>
                         <h4 class="text-xl font-semibold text-gray-800">${item.title}</h4>
                     </div>
-                    <div class="solution-description hidden text-gray-600">
+                    <div class="solution-description text-gray-600">
                         <p>${item.description}</p>
                     </div>
                 `;
                 solutionsGrid.appendChild(card);
 
-                card.addEventListener('click', () => {
-                    card.querySelector('.solution-description').classList.toggle('hidden');
-                });
+                // card.addEventListener('click', () => {
+                //     card.querySelector('.solution-description').classList.toggle('hidden');
+                // });
             });
 
             const powerDemandCtx = document.getElementById('powerDemandChart').getContext('2d');
